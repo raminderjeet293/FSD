@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var names=["ABC","DEF","LMN","HDJ","JHW","JKD"];
+        var names2=['SAA','DAD','DFF']
+        function show()
+        {
+            document.getElementById("JS").innerHTML=names;
+        }
+        function show_len()
+        { 
+           
+            document.getElementById("JS1").innerHTML=names.length;
+        }
+        function show_lastEl()
+        { 
+           
+            document.getElementById("JS2").innerHTML=names[names.length-1];
+        }
+        function pop()//removes last element
+        { 
+           
+            var ele=names.pop();
+            console.log("Popped element:", ele);
+            document.getElementById("JS3").innerHTML = "Popped Element: " + ele;
+            // document.getElementById("JS3").innerHTML=ele;
+        }
+        function push()//adds at last
+        { 
+            document.getElementById("JS4").innerHTML =names.push('PQR')
+       
+        }
+        function shift()//removes from start
+        { 
+           
+            document.getElementById("JS5").innerHTML=names.shift();
+        }
+        function unshift()//adds on start
+        { 
+            document.getElementById("JS6").innerHTML =names.unshift('RRR')
+       
+        }
+        function concat()//adds on start
+        { 
+            var con=names.concat(names2)
+            document.getElementById("JS7").innerHTML ="Concatenated Array"+con;
+       
+        }
+        function splice()//adds on start
+        { 
+            var s1=names.splice(2,0,'aaa','bbb')
+            document.getElementById("JS8").innerHTML ="Splicing done ,2 elements added at 2nd index";
+       
+        }
+        function slice()//adds on start
+        { 
+            document.getElementById("JS9").innerHTML =names.slice(2)
+       
+        }
+
+    </script>
+</head>
+<body>
+    
+    <button  onclick="show()">Print array</button>
+<p id="JS"></p>
+<button  onclick="show_len()">Print array length</button>
+<p id="JS1"></p>
+<button  onclick="show_lastEl()">Print array last element</button>
+<p id="JS2"></p>
+<button onclick="pop()">Pop last element</button>
+    <p id="JS3"></p>
+    <button onclick="push()">Push element</button>
+    <p id="JS4"></p>
+    <button onclick="shift()">Shift element</button>
+    <p id="JS5"></p>
+    <button onclick="unshift()">Unshift element</button>
+    <p id="JS6"></p>
+    <button onclick="concat()">Concat arrays</button>
+    <p id="JS7"></p>
+    <button onclick="splice()">Splicing </button>
+    <p id="JS8"></p>
+    <button onclick="slice()">Slicing </button>
+    <p id="JS9"></p>
+</body> 
+</html>

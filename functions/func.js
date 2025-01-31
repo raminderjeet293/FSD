@@ -9,6 +9,7 @@ const arrow_sqr=(n)=>
 {
     return n*n;
 }
+
 console.log(arrow_sqr(10));
 
 //default_parameter

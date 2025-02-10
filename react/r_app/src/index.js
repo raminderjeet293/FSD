@@ -1,14 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { Btn } from "./Components/Button";
+import Btn from "./Components/Button/Button";
 // import App from './App';Y
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Btn />
+    <Btn style="login" text="Login" />
+    <Btn style="confirm" text="Confffirm" />
+    <Btn style="delete" text="Delete" />
   </React.StrictMode>
 );
 // const nm = "MCA Sec A";

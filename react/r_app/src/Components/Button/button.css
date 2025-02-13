@@ -5,6 +5,7 @@
 } */
 .login{
     width:100px;
+    height:100px;
     background-color: rgb(116, 180, 180);
     color: blue;
 }
@@ -15,6 +16,7 @@
 }
 .delete{
     width:100px;
+    height:200px;
     background-color: rgb(147, 0, 0);
     color: rgb(5, 5, 33);
 }

@@ -4,13 +4,20 @@ import "./index.css";
 import Btn from "./Components/Button/Button";
 // import App from './App';Y
 import reportWebVitals from "./reportWebVitals";
+import TextBox from "./Components/TextBox/TextBox";
+import { StatefulComponent } from "./Components/StatefulComponent";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Btn style="login" text="Login" />
+    <br></br>
     <Btn style="confirm" text="Confffirm" />
+    <br></br>
     <Btn style="delete" text="Delete" />
+    <br></br>
+    <TextBox />
+    <StatefulComponent />
   </React.StrictMode>
 );
 // const nm = "MCA Sec A";

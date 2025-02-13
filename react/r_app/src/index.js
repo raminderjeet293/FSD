@@ -6,6 +6,7 @@ import Btn from "./Components/Button/Button";
 import reportWebVitals from "./reportWebVitals";
 import TextBox from "./Components/TextBox/TextBox";
 import { StatefulComponent } from "./Components/StatefulComponent";
+import { Light } from "./Components/light";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,6 +19,7 @@ root.render(
     <br></br>
     <TextBox />
     <StatefulComponent />
+    <Light />
   </React.StrictMode>
 );
 // const nm = "MCA Sec A";

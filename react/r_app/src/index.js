@@ -7,6 +7,8 @@ import reportWebVitals from "./reportWebVitals";
 import TextBox from "./Components/TextBox/TextBox";
 import { StatefulComponent } from "./Components/StatefulComponent";
 import { Light } from "./Components/light";
+import { Counter } from "./Components/Counter";
+import Colour from "./Components/Colour/Colour";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +22,8 @@ root.render(
     <TextBox />
     <StatefulComponent />
     <Light />
+    <Counter />
+    <Colour />
   </React.StrictMode>
 );
 // const nm = "MCA Sec A";

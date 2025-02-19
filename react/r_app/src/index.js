@@ -7,23 +7,30 @@ import reportWebVitals from "./reportWebVitals";
 import TextBox from "./Components/TextBox/TextBox";
 import { StatefulComponent } from "./Components/StatefulComponent";
 import { Light } from "./Components/light";
-import { Counter } from "./Components/Counter";
+// import { Counter } from "./Components/Counter";
 import Colour from "./Components/Colour/Colour";
+import ButtonCounter from "./Components/HigherOrder/Button_counter";
+import Bttn from "./Components/Login/Btn";
+import { LText } from "./Components/Login/LText";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Btn style="login" text="Login" />
-    <br></br>
+    <br />
     <Btn style="confirm" text="Confffirm" />
-    <br></br>
+    <br />
     <Btn style="delete" text="Delete" />
-    <br></br>
+    <br />
     <TextBox />
     <StatefulComponent />
     <Light />
-    <Counter />
+    {/* <Counter /> */}
     <Colour />
+    <ButtonCounter />
+    <Bttn />
+    <LText text="You must log in to continue" style="l" />
+    <LText text="Log in to Facebook" />
   </React.StrictMode>
 );
 // const nm = "MCA Sec A";

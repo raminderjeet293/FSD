@@ -12,6 +12,7 @@ import Colour from "./Components/Colour/Colour";
 import ButtonCounter from "./Components/HigherOrder/Button_counter";
 import Bttn from "./Components/Login/Btn";
 import { LText } from "./Components/Login/LText";
+import ControlledInput from "./Components/Controlled_input";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -31,6 +32,7 @@ root.render(
     <Bttn />
     <LText text="You must log in to continue" style="l" />
     <LText text="Log in to Facebook" />
+    <ControlledInput />
   </React.StrictMode>
 );
 // const nm = "MCA Sec A";

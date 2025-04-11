@@ -1,0 +1,45 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f2f5;
+  }
+  
+  .left {
+    margin-right: 3rem;
+  }
+  
+  .facebook-title {
+    font-size: 4rem;
+    color: #1877f2;
+  }
+  
+  .login-box {
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #1877f2;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .create-btn {
+    background-color: #42b72a;
+    margin-top: 1rem;
+  }
+  

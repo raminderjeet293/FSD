@@ -1,20 +1,25 @@
 import React from "react";
+import "./Dashboard.css";
 
 const Dashboard = ({ user }) => {
-  if (!user) return <p>No user data. Please login.</p>;
+  if (!user) return <p className="no-user">No user data. Please login.</p>;
 
   return (
-    <div style={{ padding: "2rem" }}>
-      <h2>Welcome, {user.name}!</h2>
-      <p>
-        <strong>Email:</strong> {user.email}
-      </p>
-      <p>
-        <strong>Gender:</strong> {user.gender}
-      </p>
-      <p>
-        <strong>City:</strong> {user.city}
-      </p>
+    <div className="dashboard-container">
+      <div className="dashboard-box">
+        <h2>Welcome, {user.name}!</h2>
+        <div className="user-info">
+          <p>
+            <span>Email:</span> {user.email}
+          </p>
+          <p>
+            <span>Gender:</span> {user.gender}
+          </p>
+          <p>
+            <span>City:</span> {user.city}
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

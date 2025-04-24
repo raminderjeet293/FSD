@@ -6,7 +6,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
 mongoose
   .connect("mongodb://127.0.0.1:27017/facebookClone", {
     useNewUrlParser: true,
@@ -15,7 +14,6 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
-// User model
 const UserSchema = new mongoose.Schema({
   name: String,
   email: String,
@@ -25,7 +23,6 @@ const UserSchema = new mongoose.Schema({
 });
 const User = mongoose.model("User", UserSchema);
 
-// Login route
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
   try {

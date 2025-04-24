@@ -9,7 +9,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        <h1 className="text-3xl font-bold text-blue-600">Hello Tailwind</h1>
         <Route path="/" element={<Login onLogin={setUser} />} />
         <Route path="/dashboard" element={<Dashboard user={user} />} />
       </Routes>
